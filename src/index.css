@@ -1,3 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: "Lato", sans-serif;
+  }
+
+  html,
+  body,
+  #root,
+  main {
+    height: 100%;
+  }
+
+  #root {
+    @apply flex flex-col overflow-x-hidden;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@layer components {
+  header .bold-text {
+    font-family: "Arvo", serif;
+  }
+
+  .leaderboard-bg {
+    background: url("./assets/leaderboard-background.png");
+  }
+
+  div.first {
+    @apply bg-[#ffbf00] text-black border-black;
+  }
+
+  div.second {
+    @apply bg-[#C0C0C0] text-black border-black;
+  }
+
+  div.third {
+    @apply bg-[#b08d57] border-gray-700;
+  }
+
+  span.first {
+    @apply text-[#ffbf00];
+  }
+
+  span.second {
+    @apply text-[#C0C0C0];
+  }
+
+  span.third {
+    @apply text-[#b08d57];
+  }
+
+  .infinite-scroll {
+    animation: scroll 15s linear infinite;
+  }
+
+  .banner-line {
+    @apply h-0.5 w-full rounded-full absolute;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
