@@ -11,8 +11,8 @@ const App = () => {
       <main className="flex-1 flex flex-col min-h-0 overflow-hidden">
         <Leaderboard />
         <AddEntry />
-        <div className="bg-black">
-          <img src={bottomBanner} className="min-h-0 w-full mx-auto" />
+        <div className="bg-black h-full">
+          <img src={bottomBanner} className="min-h-0 h-full w-full mx-auto" />
         </div>
       </main>
       <Footer />
