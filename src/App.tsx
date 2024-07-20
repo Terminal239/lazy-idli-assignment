@@ -12,7 +12,7 @@ const App = () => {
         <Leaderboard />
         <AddEntry />
         <div className="bg-black h-full">
-          <img src={bottomBanner} className="min-h-0 h-full w-full mx-auto" />
+          <img src={bottomBanner} className="min-h-0 h-full object-cover mx-auto" />
         </div>
       </main>
       <Footer />
