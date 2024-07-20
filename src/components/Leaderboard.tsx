@@ -44,7 +44,7 @@ const Leaderboard = () => {
             </div>
           </div>
         </div>
-        <div className="leaderboard-entry w-full h-[370px] lg:h-[452px] overflow-y-auto flex flex-col gap-1 lg:gap-2 mt-1 lg:mt-2 font-[900] tracking-wider">
+        <div className="leaderboard-entry w-full h-[376px] lg:h-[452px] overflow-y-auto flex flex-col gap-1 lg:gap-2 mt-1 lg:mt-2 font-[900] tracking-wider">
           {[...leaderboardData]
             .sort((a, b) => (a.score <= b.score ? -1 : 1))
             .map((entry, index) => (
