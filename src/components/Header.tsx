@@ -1,9 +1,7 @@
 import Container from "./Reusable/Container";
 import Logo from "./Reusable/Logo";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header className="bg-black/90 text-white px-4 py-1">
       <Container className="flex items-center justify-between h-[48px]">

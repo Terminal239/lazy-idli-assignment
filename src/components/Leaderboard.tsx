@@ -5,8 +5,6 @@ import Entry from "./Entry";
 import NewEntry from "./NewEntry";
 import Container from "./Reusable/Container";
 
-type Props = {};
-
 const Banner = () => {
   return (
     <div className="py-2 sm:py-4 flex bg-black text-white overflow-hidden">
@@ -27,7 +25,7 @@ const Banner = () => {
   );
 };
 
-const Leaderboard = (props: Props) => {
+const Leaderboard = () => {
   const leaderboardData = useAppSelector(getData);
   const newEntry = useAppSelector(getNewEntry);
 

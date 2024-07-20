@@ -6,15 +6,13 @@ import { addPlayer, setNewEntry } from "../redux/slice";
 import { useAppDispatch } from "../redux/store";
 import TimeInput from "./Reusable/TimeInput";
 
-type Props = {};
-
 const INITIAL_TIME = {
   minutes: 0,
   seconds: 0,
   milliseconds: 0,
 };
 
-const AddEntry = (props: Props) => {
+const AddEntry = () => {
   const dispatch = useAppDispatch();
   const [showModal, setShowModal] = useState(false);
 

@@ -1,6 +1,4 @@
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="bg-black text-white h-[40px] flex items-center">
       <p className="min-w-max infinite-scroll">
